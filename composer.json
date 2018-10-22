@@ -1,0 +1,28 @@
+{
+  "name": "fastgoo/getui-php",
+  "type": "library",
+  "description": "个推PHP扩展包",
+  "keywords": [
+    "getui",
+    "push"
+  ],
+  "homepage": "https://phalcon.fastgoo.net",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Mr.Zhou",
+      "email": "773729704@qq.com",
+      "homepage": "https://github.com/fastgoo"
+    }
+  ],
+  "require": {
+    "php": ">=5.6",
+    "guzzlehttp/guzzle": "^6.3",
+    "symfony/cache": "^4.1"
+  },
+  "autoload": {
+    "psr-4": {
+      "GeTui\\": "src/"
+    }
+  }
+}
