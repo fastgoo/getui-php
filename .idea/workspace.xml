@@ -2,273 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9614c2c2-a4a5-43df-bb60-6065ceda3966" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/getui-php.iml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/php.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/README.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/composer.json" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/composer.lock" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/demo.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/Api.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/ApiException.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/ClientManage.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/PushClient.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/PushEntity.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/Template/Link.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/Template/Message.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/Template/Notification.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/Template/Notypopload.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/Template/PushInfo.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/Template/Style.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/autoload.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/composer/ClassLoader.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/composer/LICENSE" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/composer/autoload_files.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/composer/autoload_namespaces.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/composer/autoload_real.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/composer/autoload_static.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/composer/installed.json" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/CHANGELOG.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/LICENSE" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/README.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/UPGRADING.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/composer.json" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/Client.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/ClientInterface.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/Cookie/CookieJar.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/Cookie/CookieJarInterface.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/Cookie/FileCookieJar.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/Cookie/SessionCookieJar.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/Cookie/SetCookie.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/Exception/BadResponseException.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/Exception/ClientException.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/Exception/ConnectException.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/Exception/GuzzleException.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/Exception/RequestException.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/Exception/SeekException.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/Exception/ServerException.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/Exception/TooManyRedirectsException.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/Exception/TransferException.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/Handler/CurlFactory.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/Handler/CurlFactoryInterface.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/Handler/CurlHandler.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/Handler/CurlMultiHandler.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/Handler/EasyHandle.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/Handler/MockHandler.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/Handler/Proxy.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/Handler/StreamHandler.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/HandlerStack.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/MessageFormatter.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/Middleware.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/Pool.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/PrepareBodyMiddleware.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/RedirectMiddleware.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/RequestOptions.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/RetryMiddleware.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/TransferStats.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/UriTemplate.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/functions.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/functions_include.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/promises/CHANGELOG.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/promises/LICENSE" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/promises/Makefile" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/promises/README.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/promises/composer.json" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/promises/src/AggregateException.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/promises/src/CancellationException.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/promises/src/Coroutine.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/promises/src/EachPromise.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/promises/src/FulfilledPromise.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/promises/src/Promise.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/promises/src/PromiseInterface.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/promises/src/PromisorInterface.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/promises/src/RejectedPromise.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/promises/src/RejectionException.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/promises/src/TaskQueue.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/promises/src/TaskQueueInterface.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/promises/src/functions.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/promises/src/functions_include.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/psr7/CHANGELOG.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/psr7/LICENSE" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/psr7/README.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/psr7/composer.json" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/psr7/src/AppendStream.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/psr7/src/BufferStream.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/psr7/src/CachingStream.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/psr7/src/DroppingStream.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/psr7/src/FnStream.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/psr7/src/InflateStream.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/psr7/src/LazyOpenStream.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/psr7/src/LimitStream.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/psr7/src/MessageTrait.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/psr7/src/MultipartStream.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/psr7/src/NoSeekStream.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/psr7/src/PumpStream.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/psr7/src/Request.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/psr7/src/Response.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/psr7/src/ServerRequest.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/psr7/src/Stream.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/psr7/src/StreamDecoratorTrait.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/psr7/src/StreamWrapper.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/psr7/src/UploadedFile.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/psr7/src/Uri.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/psr7/src/UriNormalizer.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/psr7/src/UriResolver.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/psr7/src/functions.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/psr7/src/functions_include.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/psr/cache/CHANGELOG.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/psr/cache/LICENSE.txt" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/psr/cache/README.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/psr/cache/composer.json" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/psr/cache/src/CacheException.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/psr/cache/src/CacheItemInterface.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/psr/cache/src/CacheItemPoolInterface.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/psr/cache/src/InvalidArgumentException.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/psr/http-message/CHANGELOG.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/psr/http-message/LICENSE" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/psr/http-message/README.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/psr/http-message/composer.json" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/psr/http-message/src/MessageInterface.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/psr/http-message/src/RequestInterface.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/psr/http-message/src/ResponseInterface.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/psr/http-message/src/ServerRequestInterface.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/psr/http-message/src/StreamInterface.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/psr/http-message/src/UploadedFileInterface.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/psr/http-message/src/UriInterface.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/psr/log/.gitignore" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/psr/log/LICENSE" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/psr/log/Psr/Log/AbstractLogger.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/psr/log/Psr/Log/InvalidArgumentException.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/psr/log/Psr/Log/LogLevel.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/psr/log/Psr/Log/LoggerAwareInterface.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/psr/log/Psr/Log/LoggerAwareTrait.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/psr/log/Psr/Log/LoggerInterface.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/psr/log/Psr/Log/LoggerTrait.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/psr/log/Psr/Log/NullLogger.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/psr/log/Psr/Log/Test/LoggerInterfaceTest.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/psr/log/README.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/psr/log/composer.json" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/psr/simple-cache/.editorconfig" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/psr/simple-cache/LICENSE.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/psr/simple-cache/README.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/psr/simple-cache/composer.json" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/psr/simple-cache/src/CacheException.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/psr/simple-cache/src/CacheInterface.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/psr/simple-cache/src/InvalidArgumentException.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/symfony/cache/.gitignore" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/symfony/cache/Adapter/AbstractAdapter.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/symfony/cache/Adapter/AdapterInterface.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/symfony/cache/Adapter/ApcuAdapter.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/symfony/cache/Adapter/ArrayAdapter.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/symfony/cache/Adapter/ChainAdapter.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/symfony/cache/Adapter/DoctrineAdapter.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/symfony/cache/Adapter/FilesystemAdapter.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/symfony/cache/Adapter/MemcachedAdapter.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/symfony/cache/Adapter/NullAdapter.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/symfony/cache/Adapter/PdoAdapter.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/symfony/cache/Adapter/PhpArrayAdapter.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/symfony/cache/Adapter/PhpFilesAdapter.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/symfony/cache/Adapter/ProxyAdapter.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/symfony/cache/Adapter/RedisAdapter.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/symfony/cache/Adapter/SimpleCacheAdapter.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/symfony/cache/Adapter/TagAwareAdapter.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/symfony/cache/Adapter/TagAwareAdapterInterface.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/symfony/cache/Adapter/TraceableAdapter.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/symfony/cache/Adapter/TraceableTagAwareAdapter.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/symfony/cache/CHANGELOG.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/symfony/cache/CacheItem.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/symfony/cache/DataCollector/CacheDataCollector.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/symfony/cache/DoctrineProvider.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/symfony/cache/Exception/CacheException.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/symfony/cache/Exception/InvalidArgumentException.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/symfony/cache/LICENSE" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/symfony/cache/PruneableInterface.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/symfony/cache/README.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/symfony/cache/ResettableInterface.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/symfony/cache/Simple/AbstractCache.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/symfony/cache/Simple/ApcuCache.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/symfony/cache/Simple/ArrayCache.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/symfony/cache/Simple/ChainCache.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/symfony/cache/Simple/DoctrineCache.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/symfony/cache/Simple/FilesystemCache.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/symfony/cache/Simple/MemcachedCache.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/symfony/cache/Simple/NullCache.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/symfony/cache/Simple/PdoCache.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/symfony/cache/Simple/PhpArrayCache.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/symfony/cache/Simple/PhpFilesCache.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/symfony/cache/Simple/Psr6Cache.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/symfony/cache/Simple/RedisCache.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/symfony/cache/Simple/TraceableCache.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/symfony/cache/Tests/Adapter/AbstractRedisAdapterTest.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/symfony/cache/Tests/Adapter/AdapterTestCase.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/symfony/cache/Tests/Adapter/ApcuAdapterTest.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/symfony/cache/Tests/Adapter/ArrayAdapterTest.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/symfony/cache/Tests/Adapter/ChainAdapterTest.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/symfony/cache/Tests/Adapter/DoctrineAdapterTest.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/symfony/cache/Tests/Adapter/FilesystemAdapterTest.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/symfony/cache/Tests/Adapter/MaxIdLengthAdapterTest.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/symfony/cache/Tests/Adapter/MemcachedAdapterTest.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/symfony/cache/Tests/Adapter/NamespacedProxyAdapterTest.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/symfony/cache/Tests/Adapter/NullAdapterTest.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/symfony/cache/Tests/Adapter/PdoAdapterTest.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/symfony/cache/Tests/Adapter/PdoDbalAdapterTest.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/symfony/cache/Tests/Adapter/PhpArrayAdapterTest.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/symfony/cache/Tests/Adapter/PhpArrayAdapterWithFallbackTest.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/symfony/cache/Tests/Adapter/PhpFilesAdapterTest.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/symfony/cache/Tests/Adapter/PredisAdapterTest.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/symfony/cache/Tests/Adapter/PredisClusterAdapterTest.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/symfony/cache/Tests/Adapter/ProxyAdapterTest.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/symfony/cache/Tests/Adapter/RedisAdapterTest.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/symfony/cache/Tests/Adapter/RedisArrayAdapterTest.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/symfony/cache/Tests/Adapter/RedisClusterAdapterTest.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/symfony/cache/Tests/Adapter/SimpleCacheAdapterTest.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/symfony/cache/Tests/Adapter/TagAwareAdapterTest.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/symfony/cache/Tests/Adapter/TraceableAdapterTest.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/symfony/cache/Tests/Adapter/TraceableTagAwareAdapterTest.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/symfony/cache/Tests/CacheItemTest.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/symfony/cache/Tests/DoctrineProviderTest.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/symfony/cache/Tests/Fixtures/ArrayCache.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/symfony/cache/Tests/Fixtures/ExternalAdapter.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/symfony/cache/Tests/Simple/AbstractRedisCacheTest.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/symfony/cache/Tests/Simple/ApcuCacheTest.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/symfony/cache/Tests/Simple/ArrayCacheTest.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/symfony/cache/Tests/Simple/CacheTestCase.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/symfony/cache/Tests/Simple/ChainCacheTest.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/symfony/cache/Tests/Simple/DoctrineCacheTest.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/symfony/cache/Tests/Simple/FilesystemCacheTest.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/symfony/cache/Tests/Simple/MemcachedCacheTest.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/symfony/cache/Tests/Simple/MemcachedCacheTextModeTest.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/symfony/cache/Tests/Simple/NullCacheTest.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/symfony/cache/Tests/Simple/PdoCacheTest.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/symfony/cache/Tests/Simple/PdoDbalCacheTest.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/symfony/cache/Tests/Simple/PhpArrayCacheTest.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/symfony/cache/Tests/Simple/PhpArrayCacheWithFallbackTest.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/symfony/cache/Tests/Simple/PhpFilesCacheTest.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/symfony/cache/Tests/Simple/Psr6CacheTest.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/symfony/cache/Tests/Simple/RedisArrayCacheTest.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/symfony/cache/Tests/Simple/RedisCacheTest.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/symfony/cache/Tests/Simple/RedisClusterCacheTest.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/symfony/cache/Tests/Simple/TraceableCacheTest.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/symfony/cache/Tests/Traits/PdoPruneableTrait.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/symfony/cache/Traits/AbstractTrait.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/symfony/cache/Traits/ApcuTrait.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/symfony/cache/Traits/ArrayTrait.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/symfony/cache/Traits/DoctrineTrait.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/symfony/cache/Traits/FilesystemCommonTrait.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/symfony/cache/Traits/FilesystemTrait.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/symfony/cache/Traits/MemcachedTrait.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/symfony/cache/Traits/PdoTrait.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/symfony/cache/Traits/PhpArrayTrait.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/symfony/cache/Traits/PhpFilesTrait.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/symfony/cache/Traits/ProxyTrait.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/symfony/cache/Traits/RedisProxy.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/symfony/cache/Traits/RedisTrait.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/symfony/cache/composer.json" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/symfony/cache/phpunit.xml.dist" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Client/Single.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Client/Task.php" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/demo.php" afterPath="$PROJECT_DIR$/demo.php" />
+      <change beforePath="$PROJECT_DIR$/src/Api.php" afterPath="$PROJECT_DIR$/src/Api.php" />
+      <change beforePath="$PROJECT_DIR$/src/PushClient.php" afterPath="$PROJECT_DIR$/src/PushClient.php" />
+      <change beforePath="$PROJECT_DIR$/src/PushEntity.php" afterPath="$PROJECT_DIR$/src/Client/Entity.php" />
+      <change beforePath="$PROJECT_DIR$/src/Template/Link.php" afterPath="$PROJECT_DIR$/src/Template/Link.php" />
+      <change beforePath="$PROJECT_DIR$/src/Template/Notification.php" afterPath="$PROJECT_DIR$/src/Template/Notification.php" />
+      <change beforePath="$PROJECT_DIR$/src/Template/Notypopload.php" afterPath="$PROJECT_DIR$/src/Template/Notypopload.php" />
+      <change beforePath="$PROJECT_DIR$/src/Template/Style.php" afterPath="$PROJECT_DIR$/src/Template/Style.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -277,68 +21,16 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="ClientManage.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ClientManage.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-938">
-              <caret line="46" column="32" lean-forward="true" selection-start-line="46" selection-start-column="32" selection-end-line="46" selection-end-column="32" />
-              <folding>
-                <element signature="e#110#161#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Api.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Api.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="29" column="10" lean-forward="false" selection-start-line="29" selection-start-column="10" selection-end-line="29" selection-end-column="10" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ApiException.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ApiException.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="11" column="1" lean-forward="false" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PushClient.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/PushClient.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1121">
-              <caret line="123" column="44" lean-forward="true" selection-start-line="123" selection-start-column="44" selection-end-line="123" selection-end-column="44" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="demo.php" pinned="false" current-in-tab="false">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="demo.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/demo.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="18" column="41" lean-forward="true" selection-start-line="18" selection-start-column="41" selection-end-line="18" selection-end-column="41" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Message.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Template/Message.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="688">
-              <caret line="54" column="47" lean-forward="false" selection-start-line="54" selection-start-column="35" selection-end-line="54" selection-end-column="47" />
+            <state relative-caret-position="327">
+              <caret line="34" column="7" lean-forward="true" selection-start-line="34" selection-start-column="7" selection-end-line="34" selection-end-column="7" />
               <folding />
             </state>
           </provider>
@@ -347,8 +39,70 @@
       <file leaf-file-name="Notification.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Template/Notification.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="464">
-              <caret line="58" column="26" lean-forward="true" selection-start-line="58" selection-start-column="26" selection-end-line="58" selection-end-column="26" />
+            <state relative-caret-position="-97">
+              <caret line="28" column="14" lean-forward="false" selection-start-line="28" selection-start-column="14" selection-end-line="28" selection-end-column="14" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Api.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Api.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-531">
+              <caret line="27" column="80" lean-forward="false" selection-start-line="27" selection-start-column="80" selection-end-line="27" selection-end-column="80" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Single.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Client/Single.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="439">
+              <caret line="27" column="23" lean-forward="true" selection-start-line="27" selection-start-column="23" selection-end-line="27" selection-end-column="23" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Task.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Client/Task.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="756">
+              <caret line="41" column="9" lean-forward="true" selection-start-line="33" selection-start-column="8" selection-end-line="41" selection-end-column="9" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Entity.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Client/Entity.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="200">
+              <caret line="61" column="20" lean-forward="false" selection-start-line="61" selection-start-column="20" selection-end-line="61" selection-end-column="20" />
+              <folding>
+                <element signature="e#118#132#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Link.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Template/Link.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="301">
+              <caret line="42" column="8" lean-forward="true" selection-start-line="42" selection-start-column="8" selection-end-line="48" selection-end-column="20" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Notypopload.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Template/Notypopload.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2086">
+              <caret line="143" column="10" lean-forward="true" selection-start-line="143" selection-start-column="10" selection-end-line="143" selection-end-column="10" />
               <folding />
             </state>
           </provider>
@@ -357,22 +111,19 @@
       <file leaf-file-name="Style.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Template/Style.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-645">
-              <caret line="21" column="23" lean-forward="false" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
+            <state relative-caret-position="192">
+              <caret line="188" column="29" lean-forward="false" selection-start-line="188" selection-start-column="20" selection-end-line="188" selection-end-column="29" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="231">
-                <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-                <folding />
-              </first_editor>
-              <second_editor />
+      <file leaf-file-name="PushInfo.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Template/PushInfo.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1138">
+              <caret line="158" column="40" lean-forward="true" selection-start-line="158" selection-start-column="40" selection-end-line="158" selection-end-column="40" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -406,19 +157,24 @@
         <option value="$PROJECT_DIR$/src/FileCache.php" />
         <option value="$PROJECT_DIR$/src/Base.php" />
         <option value="$PROJECT_DIR$/src/Client.php" />
-        <option value="$PROJECT_DIR$/src/Template/Link.php" />
-        <option value="$PROJECT_DIR$/src/Template/Notypopload.php" />
         <option value="$PROJECT_DIR$/src/Template/Transmission.php" />
         <option value="$PROJECT_DIR$/src/Template/PushInfo.php" />
         <option value="$PROJECT_DIR$/src/PushEntity.php" />
-        <option value="$PROJECT_DIR$/src/Template/Style.php" />
         <option value="$PROJECT_DIR$/src/Template/Message.php" />
-        <option value="$PROJECT_DIR$/src/PushClient.php" />
         <option value="$PROJECT_DIR$/src/ClientManage.php" />
-        <option value="$PROJECT_DIR$/src/Template/Notification.php" />
-        <option value="$PROJECT_DIR$/demo.php" />
-        <option value="$PROJECT_DIR$/src/Api.php" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/src/PushClient.php" />
+        <option value="$PROJECT_DIR$/src/Client/Base.php" />
+        <option value="$PROJECT_DIR$/src/Client/Task.php" />
+        <option value="$PROJECT_DIR$/src/Template/Notification.php" />
+        <option value="$PROJECT_DIR$/src/Api.php" />
+        <option value="$PROJECT_DIR$/src/Client/Single.php" />
+        <option value="$PROJECT_DIR$/src/Template/Link.php" />
+        <option value="$PROJECT_DIR$/src/Template/Notypopload.php" />
+        <option value="$PROJECT_DIR$/src/Template/Style.php" />
+        <option value="$PROJECT_DIR$/src/Client/Entity.php" />
+        <option value="$PROJECT_DIR$/demo.php" />
       </list>
     </option>
   </component>
@@ -470,22 +226,6 @@
               <item name="getui-php" type="b2602c69:ProjectViewProjectNode" />
               <item name="getui-php" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
-            <path>
-              <item name="getui-php" type="b2602c69:ProjectViewProjectNode" />
-              <item name="getui-php" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="getui-php" type="b2602c69:ProjectViewProjectNode" />
-              <item name="getui-php" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Template" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="getui-php" type="b2602c69:ProjectViewProjectNode" />
-              <item name="getui-php" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="vendor" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -502,8 +242,9 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/Template" />
       <recent name="$PROJECT_DIR$/src/Client" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/src/Template" />
       <recent name="$PROJECT_DIR$/src" />
     </key>
   </component>
@@ -532,33 +273,34 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1539930288971</updated>
-      <workItem from="1539930290724" duration="39474000" />
+      <workItem from="1539930290724" duration="39832000" />
+      <workItem from="1540254472158" duration="17295000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="39474000" />
+    <option name="totallyTimeSpent" value="57127000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="-1080" width="1920" height="1080" extended-state="0" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24973376" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25239617" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32969216" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32969216" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -573,22 +315,8 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/RequestException.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="13" column="1" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="13" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Client/Api.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/RequestException.php" />
+    <entry file="file://$PROJECT_DIR$/src/Client/Api.php" />
     <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/standard/standard_0.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
@@ -597,22 +325,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Base.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="259">
-          <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Core.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Base.php" />
+    <entry file="file://$PROJECT_DIR$/src/Core.php" />
     <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/standard/standard_3.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="232">
@@ -625,63 +339,23 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
           <caret line="6" column="10" lean-forward="false" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="10" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Template/Notypopload.php">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1035">
-          <caret line="145" column="10" lean-forward="false" selection-start-line="145" selection-start-column="10" selection-end-line="145" selection-end-column="10" />
-          <folding />
+        <state relative-caret-position="63">
+          <caret line="3" column="7" lean-forward="true" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="7" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Template/PushInfo.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="813">
-          <caret line="249" column="5" lean-forward="false" selection-start-line="249" selection-start-column="5" selection-end-line="249" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Template/Link.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="13" column="26" lean-forward="true" selection-start-line="13" selection-start-column="7" selection-end-line="13" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Template/Notification.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="464">
-          <caret line="58" column="26" lean-forward="true" selection-start-line="58" selection-start-column="26" selection-end-line="58" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Template/Message.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="688">
-          <caret line="54" column="47" lean-forward="false" selection-start-line="54" selection-start-column="35" selection-end-line="54" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demo.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="18" column="41" lean-forward="true" selection-start-line="18" selection-start-column="41" selection-end-line="18" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Api.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="29" column="10" lean-forward="false" selection-start-line="29" selection-start-column="10" selection-end-line="29" selection-end-column="10" />
-          <folding />
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="231">
+            <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
@@ -695,48 +369,117 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ClientManage.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-938">
-          <caret line="46" column="32" lean-forward="true" selection-start-line="46" selection-start-column="32" selection-end-line="46" selection-end-column="32" />
+        <state relative-caret-position="231">
+          <caret line="16" column="7" lean-forward="true" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
           <folding>
             <element signature="e#110#161#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/PushClient.php">
+    <entry file="file://$PROJECT_DIR$/src/PushEntity.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1121">
-          <caret line="123" column="44" lean-forward="true" selection-start-line="123" selection-start-column="44" selection-end-line="123" selection-end-column="44" />
+        <state relative-caret-position="609">
+          <caret line="34" column="41" lean-forward="true" selection-start-line="29" selection-start-column="8" selection-end-line="34" selection-end-column="41" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/PushEntity.php">
+    <entry file="file://$PROJECT_DIR$/src/Template/Message.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="23" column="24" lean-forward="false" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="24" />
-          <folding>
-            <element signature="e#110#134#0#PHP" expanded="true" />
-          </folding>
+        <state relative-caret-position="1344">
+          <caret line="69" column="5" lean-forward="true" selection-start-line="69" selection-start-column="5" selection-end-line="69" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PushClient.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="575">
+          <caret line="198" column="47" lean-forward="true" selection-start-line="197" selection-start-column="8" selection-end-line="198" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Template/Link.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="301">
+          <caret line="42" column="8" lean-forward="true" selection-start-line="42" selection-start-column="8" selection-end-line="48" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Template/PushInfo.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1138">
+          <caret line="158" column="40" lean-forward="true" selection-start-line="158" selection-start-column="40" selection-end-line="158" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Template/Notypopload.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2086">
+          <caret line="143" column="10" lean-forward="true" selection-start-line="143" selection-start-column="10" selection-end-line="143" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Api.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-531">
+          <caret line="27" column="80" lean-forward="false" selection-start-line="27" selection-start-column="80" selection-end-line="27" selection-end-column="80" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Template/Style.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-645">
-          <caret line="21" column="23" lean-forward="false" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
+        <state relative-caret-position="192">
+          <caret line="188" column="29" lean-forward="false" selection-start-line="188" selection-start-column="20" selection-end-line="188" selection-end-column="29" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="231">
-            <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-            <folding />
-          </first_editor>
-          <second_editor />
+    <entry file="file://$PROJECT_DIR$/src/Client/Task.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="756">
+          <caret line="41" column="9" lean-forward="true" selection-start-line="33" selection-start-column="8" selection-end-line="41" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Client/Single.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="439">
+          <caret line="27" column="23" lean-forward="true" selection-start-line="27" selection-start-column="23" selection-end-line="27" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Client/Entity.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="61" column="20" lean-forward="false" selection-start-line="61" selection-start-column="20" selection-end-line="61" selection-end-column="20" />
+          <folding>
+            <element signature="e#118#132#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Template/Notification.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-97">
+          <caret line="28" column="14" lean-forward="false" selection-start-line="28" selection-start-column="14" selection-end-line="28" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="327">
+          <caret line="34" column="7" lean-forward="true" selection-start-line="34" selection-start-column="7" selection-end-line="34" selection-end-column="7" />
+          <folding />
         </state>
       </provider>
     </entry>

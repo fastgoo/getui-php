@@ -186,11 +186,29 @@ class Style
         $this->is_clearable = $is_clearable;
     }
 
+    public function getEntity($type = 'system')
+    {
+        switch ($type) {
+            case 'system':
+                return $this->getSystemEntity();
+                break;
+            case 'getui':
+                return $this->getGeTuiEntity();
+                break;
+            case 'banner':
+                return $this->getBannerEntity();
+                break;
+            case 'expand':
+                return $this->getExpandEntity();
+                break;
+        }
+    }
+
     /**
      * 获取系统通知样式实体
      * @return array
      */
-    public function getSystemEntity()
+    private function getSystemEntity()
     {
         $this->type = 0;
         return [
@@ -209,7 +227,7 @@ class Style
      * 获取个推通知样式实体
      * @return array
      */
-    public function getGeTuiEntity()
+    private function getGeTuiEntity()
     {
         $this->type = 1;
         return [
@@ -228,7 +246,7 @@ class Style
      * 获取背景图片通知样式实体
      * @return array
      */
-    public function getBannerEntity()
+    private function getBannerEntity()
     {
         $this->type = 4;
         return [
@@ -245,7 +263,7 @@ class Style
      * 获取展开通知样式实体
      * @return array
      */
-    public function getExpandEntity()
+    private function getExpandEntity()
     {
         $this->type = 6;
         $res = [

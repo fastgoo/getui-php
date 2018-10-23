@@ -126,7 +126,7 @@ class Notypopload
 
     public function getEntity()
     {
-        return [
+        $res = [
             'style' => $this->style,
             'notyicon' => $this->notyicon,
             'notytitle' => $this->notytitle,
@@ -141,9 +141,10 @@ class Notypopload
             'loadurl' => $this->loadurl,
             'is_autoinstall' => $this->is_autoinstall,
             'is_actived' => $this->is_actived,
-            'duration_begin' => $this->duration_begin,
-            'duration_end' => $this->duration_end,
         ];
+        $this->duration_begin && $res['duration_begin'] = $this->duration_begin;
+        $this->duration_end && $res['duration_end'] = $this->duration_end;
+        return $res;
     }
 
     /**

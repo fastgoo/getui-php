@@ -14,7 +14,7 @@ class Link
      * 通知栏消息布局样式，详见Style说明
      * @var array
      */
-    protected $style;
+    protected $style = [];
 
     /**
      * 打开网址
@@ -40,12 +40,13 @@ class Link
      */
     public function getEntity()
     {
-        return [
+        $res = [
             'style' => $this->style,
-            'url' => $this->url,
-            'duration_begin' => $this->duration_begin,
-            'duration_end' => $this->duration_end,
+            'url' => $this->url
         ];
+        $this->duration_begin && $res['duration_begin'] = $this->duration_begin;
+        $this->duration_end && $res['duration_end'] = $this->duration_end;
+        return $res;
     }
 
     /**

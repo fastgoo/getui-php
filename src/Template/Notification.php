@@ -49,7 +49,7 @@ class Notification
         $res = [];
         $this->style && $res['style'] = $this->style;
         $res['transmission_type'] = $this->transmission_type;
-        $this->transmission_content && $res['transmission_content'] = $this->transmission_content;
+        $res['transmission_content'] = $this->transmission_content;
         $this->duration_begin && $res['duration_begin'] = $this->duration_begin;
         $this->duration_end && $res['duration_end'] = $this->duration_end;
         return $res;

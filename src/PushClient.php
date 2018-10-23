@@ -54,16 +54,10 @@ class PushClient
     protected $alias;
 
     /**
-     * 设备号列表
-     * @var array
+     * 推送任务ID，主要用于群推
+     * @var string
      */
-    protected $cidList;
-
-    /**
-     * 别名列表
-     * @var array
-     */
-    protected $aliasList;
+    protected $taskId;
 
     /**
      * PushClient constructor.
@@ -133,23 +127,27 @@ class PushClient
 
     /**
      * 设置推送设备号
+     * 可设置数组
      * @param $clientId
      * @return $this
      */
     public function clientId($clientId)
     {
         $this->cid = $clientId;
+        is_array($this->cid) && $this->is_single = false;
         return $this;
     }
 
     /**
      * 设置推送别名
+     * 可设置数组
      * @param $alias
      * @return $this
      */
     public function alias($alias)
     {
         $this->alias = $alias;
+        is_array($this->alias) && $this->is_single = false;
         return $this;
     }
 
@@ -159,6 +157,83 @@ class PushClient
      * @throws ApiException
      */
     public function push()
+    {
+        $res = $this->buildRequestData();
+        if ($this->is_single) {
+            $this->cid && $res['cid'] = $this->cid;
+            $this->alias && $res['alias'] = $this->alias;
+            return $this->api->pushSingle($res);
+        }
+    }
+
+    /**
+     * 保存推送任务
+     * @return $this
+     * @throws ApiException
+     */
+    public function save()
+    {
+        $ret = $this->api->saveTask($this->buildRequestData());
+        if (!$ret) {
+            throw new ApiException('推送消息任务投递失败了');
+        }
+        $this->taskId = $ret['taskid'];
+        return $this;
+    }
+
+    /**
+     * 开始推送任务
+     * @param bool $is_detail
+     * @throws ApiException
+     */
+    public function pushTask($is_detail = false)
+    {
+        if (!$this->taskId) {
+            throw new ApiException('taskid不存在');
+        }
+        $res = ['need_detail' => $is_detail, 'taskid' => $this->taskId,];
+        if ($this->is_single) {
+            throw new ApiException('推送对象非列表');
+        }
+        $this->alias && $res['alias'] = $this->alias;
+        $this->cid && $res['cid'] = $this->cid;
+        $this->api->pushTask($res);
+    }
+
+    /**
+     * 通过筛选条件推送消息
+     * @param array $conditions
+     * @return bool|mixed
+     * @throws ApiException
+     */
+    public function pushByCondition(array $conditions)
+    {
+        $res = $this->buildRequestData();
+        $res['condition'] = $conditions;
+        return $this->api->pushByConditions($res);
+    }
+
+    public function pushBatch()
+    {
+
+    }
+
+    /**
+     * 停止推送任务
+     * @param $taskId
+     * @return bool|mixed
+     * @throws ApiException
+     */
+    public function stop($taskId)
+    {
+        return $this->api->stopPush($taskId);
+    }
+
+    /**
+     * 组装推送基础数据数组
+     * @return array
+     */
+    private function buildRequestData()
     {
         $this->entity->message->setAppKey($this->config['app_key']);
         $res = [
@@ -180,12 +255,23 @@ class PushClient
                 $res['push_info'] = $this->entity->pushInfo->getAlertEntity();
                 break;
         }
-        if ($this->is_single) {
-            $this->cid && $res['cid'] = $this->cid;
-            $this->alias && $res['alias'] = $this->alias;
-            return $this->api->pushSingle($res);
-        }
+        return $res;
     }
+
+    /**
+     * 初始化对象
+     * 以便以下次数据不会被污染
+     */
+    private function clear()
+    {
+        $this->entity = new PushEntity();
+        $this->taskId = null;
+        $this->is_single = true;
+        $this->cid = null;
+        $this->alias = null;
+        $this->type = null;
+    }
+
 
     private function pushSingle()
     {
