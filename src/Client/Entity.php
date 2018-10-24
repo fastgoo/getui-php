@@ -49,61 +49,72 @@ class Entity
     /**
      * 设置message消息结构
      * @param callable $call_func
+     * @return $this
      */
     public function setMessage(callable $call_func)
     {
         call_user_func($call_func, $this->message);
+        return $this;
     }
 
     /**
      * 设置应用模板消息结构
      * @param callable $call_func
+     * @return $this
      */
     public function setNotification(callable $call_func)
     {
         $this->message->setMsgtype(($this->message)::MSG_TYPE_NOTIFICATION);
         call_user_func($call_func, $this->notification);
+        return $this;
     }
 
     /**
      * 设置网页模板消息结构
      * @param callable $call_func
+     * @return $this
      */
     public function setLink(callable $call_func)
     {
         $this->message->setMsgtype(($this->message)::MSG_TYPE_LINK);
         call_user_func($call_func, $this->link);
+        return $this;
     }
 
     /**
      * 设置下载模板消息结构
      * @param callable $call_func
+     * @return $this
      */
     public function setNotypopload(callable $call_func)
     {
         $this->message->setMsgtype(($this->message)::MSG_TYPE_NITYPOPLOAD);
         call_user_func($call_func, $this->notypopload);
+        return $this;
     }
 
     /**
      * 设置透传模板消息结构
      * @param callable $call_func
+     * @return $this
      */
     public function setPushInfo(callable $call_func)
     {
         $this->message->setMsgtype(($this->message)::MSG_TYPE_TRANSMISSION);
         call_user_func($call_func, $this->pushInfo);
+        return $this;
     }
 
     /**
      * 设置安卓的通知样式
      * @param callable $call_func
-     * @return mixed
+     * @return $this
      */
     public function setStyle(callable $call_func)
     {
         $this->style->setLogourl($this->config['logo_url']);
         call_user_func($call_func, $this->style);
+        return $this;
     }
 
     /**
@@ -119,19 +130,23 @@ class Entity
     /**
      * 设置推送设备号（可传数组）
      * @param $clientId
+     * @return $this
      */
     public function setClientId($clientId)
     {
         $this->cid = $clientId;
+        return $this;
     }
 
     /**
      * 设置推送别名（可传数组）
      * @param $alias
+     * @return $this
      */
     public function setAlias($alias)
     {
         $this->alias = $alias;
+        return $this;
     }
 
     /**

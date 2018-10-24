@@ -1,69 +1,70 @@
-
-### 扩展简介
+<p align="center">
+<img src="http://www.lgstatic.com/thumbnail_300x300/i/image/M00/4B/5B/Cgp3O1efAWWAC02xAAB2G5qzmHQ810.png?1533850691" width="160" alt="个推 PHP SDK"/>
+</p>
+<p align="center">
+  <a href="https://github.com/fastgoo/getui-php"><img src="https://img.shields.io/badge/license-MIT-brightgreen.svg"></a> 
+ <a href="https://php.net"><img src="https://img.shields.io/badge/php->=5.6-brightgreen.svg"></a>
+ <a href="https://guzzle-cn.readthedocs.io/zh_CN/latest/overview.html"><img src="https://img.shields.io/badge/guzzle->=6.0-green.svg"></a>
+ <a href="http://www.symfonychina.com/doc/current/components/cache.html"><img src="https://img.shields.io/badge/symfony/cache->=4.0-green.svg"></a>
+  <a href="http://docs.getui.com/getui/server/rest/start/"><img src="https://img.shields.io/badge/个推-sdk-2077ff.svg"></a>
+</p>
 
 ---
+个推文档： http://docs.getui.com/getui/server/rest/start/
 
-* 该扩展主要是通过aliyun官方 2017-05-25 版本云短信封装的php扩展包
-* 目前主要支持2个功能接口（发送短信、获取指定号码指定时间的短信记录）
-* 该扩展适用于目前所有现代框架
-* 作者qq 773729704、微信 huoniaojugege  加好友备注github
+:gift: getui-php实现了个推的单推、任务推送、停止推送、批量推以及其他相关接口操作，大大简化了使用流程，同时最大程度还原个推的功能以及设置。
 
-### 安装
-
----
-
-```
-composer require fastgoo/aliyun-sms   
+#### compsoer 安装
+`composer require fastgoo/getui-php` 
 
 
-或者手动引入到composer.json
+## 快速开始
 
-{
-  "require": {
-    "fastgoo/aliyun-sms": "1.0"
-  }
+```PHP
+**
+ * @var $api
+ * host 请求域名 默认域名https://wxapi.fastgoo.net/
+ * timeout 请求超时时间
+ * secret 请求key
+ */
+$api = new \PadChat\Api(['secret' => 'test']);
+
+try {
+    /** 初始化微信实例 */
+    $res = $api->init('https://webhook.fastgoo.net/callback.php');
+    if(!$res){
+        exit("微信实例获取失败");
+    }
+    /** 设置微信实例 */
+    $api->setWxHandle($res['wx_user']);
+    /** 账号密码/账号手机号/token 登录 */
+    $loginRes = $api->login([
+        'username' => '你的账号',
+        'password' => '你的密码',
+        'wx_data' => '不填则安全验证登录'
+    ]);
+    var_dump($loginRes);
+    /** 获取登录二维码 */
+    $qrcode = $api->getLoginQrcode();
+    if(!$qrcode){
+        exit("二维码链接获取失败");
+    }
+    var_dump($qrcode['url']);
+    /** 获取扫码状态 */
+    while (true) {
+        $qrcodeInfo = $api->getQrcodeStatus();
+        if (!$qrcodeInfo) {
+            exit();
+        }
+        var_dump($qrcodeInfo);
+        sleep(1);
+    }
+} catch (\PadChat\RequestException $requestException) {
+    var_dump($requestException->getMessage());
 }
-
-composer install #安装依赖
 ```
 
-### 使用范例
 
----
 
-```
-<?php
-
-use Aliyun\Sms\Api AS SmsApi;
-
-/** 短信推送配置信息 **/
-$config = [
-    'accessKeyId' => '你的accessKeyId',
-    'accessKeySecret' => '你的accessKeySecret',
-    'signName' => '签名名称',
-    'defaultTemplate' => '默认模板code',
-];
-
-$smsApi = new SmsApi($config);
-
-//例如模板code的模板内容为：您的验证码为：${code}，该验证码 5 分钟内有效，请勿泄漏于他人。
-$templateCode = "模板code";
-
-//模板参数 code为模板内容里面的变量
-$param = ['code'=>'123456'];
-$phone = '手机号码';
-$result = $smsApi->setTemplate($param,$templateCode)->send($phone);
-```
-
-### 获取指定号码的发送记录
-
----
-
-```
-$date = "20170801"; 查询指定时间范围内的发送记录
-$nums = 15; #每页15条数据
-$page = 1; #当前页码
-$result = $smsApi->getSendDetail($phone,$date,$nums,$page)
-```
 
 
