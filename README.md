@@ -86,9 +86,9 @@ try {
             $notification->setDurationBegin();
         })
         ->setPushInfo(function (\GeTui\Template\PushInfo $pushInfo) {
-            //通知标题
+            //（必传）通知标题
             $pushInfo->setTitle('测试标题');
-            //通知内容
+            //（必传）通知内容
             $pushInfo->setBody('测试内容');
             //自定义透传内容
             $pushInfo->setPayload(json_encode(['name' => "周先生"]));
