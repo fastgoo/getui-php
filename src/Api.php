@@ -8,6 +8,12 @@
 
 namespace GeTui;
 
+/**
+ * Class Api
+ * @package GeTui
+ * 其他接口文档地址：http://docs.getui.com/getui/server/rest/other_if/
+ * 推送接口文档地址：http://docs.getui.com/getui/server/rest/push/
+ */
 class Api
 {
     use ClientManage;
@@ -40,11 +46,12 @@ class Api
      */
     public function saveTask(array $params)
     {
+        unset($params['requestid']);
         $ret = $this->request('POST', $this->baseUri . '/save_list_body', $params);
         if ($ret['result'] != 'ok') {
             return false;
         }
-        return $ret;
+        return $ret['taskid'];
     }
 
     /**
@@ -113,44 +120,292 @@ class Api
         return $ret;
     }
 
-
-    public function bindAlias()
+    /**
+     * 绑定别名，可以批量绑定
+     * @param array $params
+     * @return bool|mixed
+     * @throws ApiException
+     */
+    public function bindAlias(array $params)
     {
-
+        $ret = $this->request('POST', $this->baseUri . '/bind_alias', ['alias_list' => $params]);
+        if ($ret['result'] != 'ok') {
+            throw new ApiException($ret['desc']);
+        }
+        return true;
     }
 
-    public function getClientIdsByAlias()
+    /**
+     * 根据别名获取已绑定的设备号列表
+     * 一个别名可以对应N个设备号
+     * @param $alias
+     * @return bool|mixed
+     * @throws ApiException
+     */
+    public function getClientIdsByAlias($alias)
     {
-
+        $ret = $this->request('GET', $this->baseUri . '/query_cid/' . $alias);
+        if ($ret['result'] != 'ok') {
+            throw new ApiException($ret['desc']);
+        }
+        return $ret['cid'];
     }
 
-    public function getAliaByClientId()
+    /**
+     * 根据设备号获取别名字符串
+     * @param $clientId
+     * @return bool
+     * @throws ApiException
+     */
+    public function getAliaByClientId($clientId)
     {
-
+        $ret = $this->request('GET', $this->baseUri . '/query_alias/' . $clientId);
+        if ($ret['result'] != 'ok') {
+            throw new ApiException($ret['desc']);
+        }
+        return $ret['alias'];
     }
 
-    public function unbindAlias()
+    /**
+     * 设备号别名解绑
+     * @param $clientId
+     * @param $alias
+     * @return bool
+     * @throws ApiException
+     */
+    public function unbindAlias($clientId, $alias)
     {
-
+        $ret = $this->request('POST', $this->baseUri . '/unbind_alias', ['cid' => $clientId, 'alias' => $alias]);
+        if ($ret['result'] != 'ok') {
+            throw new ApiException($ret['desc']);
+        }
+        return true;
     }
 
-    public function unbindAliasAll()
+    /**
+     * 解绑该别名相关的所有设备号
+     * @param $alias
+     * @return bool
+     * @throws ApiException
+     */
+    public function unbindAliasAll($alias)
     {
-
+        $ret = $this->request('POST', $this->baseUri . '/unbind_alias_all', compact('alias'));
+        if ($ret['result'] != 'ok') {
+            throw new ApiException($ret['desc']);
+        }
+        return true;
     }
 
-    public function setTags()
+    /**
+     * 设置用户标签
+     * @param $clientId
+     * @param $tags
+     * @return bool
+     * @throws ApiException
+     */
+    public function setTags($clientId, $tags)
     {
-
+        $ret = $this->request('POST', $this->baseUri . '/set_tags', ['cid' => $clientId, 'tag_list' => $tags]);
+        if ($ret['result'] != 'ok') {
+            throw new ApiException($ret['desc']);
+        }
+        return true;
     }
 
-    public function getTags()
+    /**
+     * 获取指定设备号的标签
+     * @param $clientId
+     * @return bool
+     * @throws ApiException
+     */
+    public function getTags($clientId)
     {
-
+        $ret = $this->request('GET', $this->baseUri . '/get_tags/' . $clientId);
+        if ($ret['result'] != 'ok') {
+            throw new ApiException($ret['desc']);
+        }
+        return $ret['tags'];
     }
 
-    public function getBlkList()
+    /**
+     * 设置黑名单设备号列表
+     * @param array $clientIds
+     * @return bool
+     * @throws ApiException
+     */
+    public function setBlkList(array $clientIds)
     {
+        $ret = $this->request('POST', $this->baseUri . '/user_blk_list', ['cid' => $clientIds]);
+        if ($ret['result'] != 'ok') {
+            throw new ApiException($ret['desc']);
+        }
+        return true;
+    }
 
+    /**
+     * 移除黑名单设备列表
+     * @param array $clientIds
+     * @return bool
+     * @throws ApiException
+     */
+    public function deleteBlkList(array $clientIds)
+    {
+        $ret = $this->request('DELETE', $this->baseUri . '/user_blk_list', ['cid' => $clientIds]);
+        if ($ret['result'] != 'ok') {
+            throw new ApiException($ret['desc']);
+        }
+        return true;
+    }
+
+    /**
+     * 获取设备状态
+     * @param $clientId
+     * @return mixed
+     * @throws ApiException
+     */
+    public function getStatus($clientId)
+    {
+        $ret = $this->request('GET', $this->baseUri . '/user_status/' . $clientId);
+        if ($ret['result'] != 'ok') {
+            throw new ApiException($ret['desc']);
+        }
+        return $ret;
+    }
+
+    /**
+     * 获取指定任务的推送结果
+     * @param $taskIds
+     * @return mixed
+     * @throws ApiException
+     */
+    public function getPushResult(array $taskIds)
+    {
+        $ret = $this->request('POST', $this->baseUri . '/push_result', ['taskIdList' => $taskIds]);
+        if ($ret['result'] != 'ok') {
+            throw new ApiException($ret['desc']);
+        }
+        return $ret['data'];
+    }
+
+    /**
+     * 获取指定日期的用户数据
+     * @param string $date
+     * @return mixed
+     * @throws ApiException
+     */
+    public function getAppUser($date)
+    {
+        $ret = $this->request('GET', $this->baseUri . '/query_app_user/' . $date);
+        if ($ret['result'] != 'ok') {
+            throw new ApiException($ret['result']);
+        }
+        return $ret['data'];
+    }
+
+    /**
+     * 获取指定日期的推送数据
+     * @param string $date
+     * @return mixed
+     * @throws ApiException
+     */
+    public function getAppPush($date)
+    {
+        $ret = $this->request('GET', $this->baseUri . '/query_app_push/' . $date);
+        if ($ret['result'] != 'ok') {
+            throw new ApiException($ret['result']);
+        }
+        return $ret['data'];
+    }
+
+    /**
+     * 设置APP角标数（仅IOS）
+     * @param array $clientIds
+     * @param int $badge 负数或者整数
+     * @param array $devices
+     * @return mixed
+     * @throws ApiException
+     */
+    public function setBadge(array $clientIds, $badge, array $devices)
+    {
+        $ret = $this->request('POST', $this->baseUri . '/set_badge', ['cid_list' => $clientIds, 'badge' => $badge, 'devicetoken_list' => $devices]);
+        if ($ret['result'] != 'ok') {
+            throw new ApiException($ret['desc']);
+        }
+        return true;
+    }
+
+    /**
+     * 根据任务组名获取推送结果
+     * 返回结果包括百日内联网用户数（活跃用户数）、实际下发数、到达数、展示数、点击数。
+     * @param $groupName
+     * @return mixed
+     * @throws ApiException
+     */
+    public function getPushResultByGroupName($groupName)
+    {
+        $ret = $this->request('GET', $this->baseUri . '/get_push_result_by_group_name/' . $groupName);
+        if ($ret['result'] != 'ok') {
+            throw new ApiException($ret['result']);
+        }
+        return $ret;
+    }
+
+    /**
+     * 当前时间一天内的在线数
+     * @return mixed
+     * @throws ApiException
+     */
+    public function getActiveCountByToday()
+    {
+        $ret = $this->request('GET', $this->baseUri . '/get_last_24hours_online_User_statistics');
+        if ($ret['result'] != 'ok') {
+            throw new ApiException($ret['result']);
+        }
+        return $ret['onlineStatics'];
+    }
+
+    /**
+     * 通过条件获取满足条件的设备数量
+     * @param array $conditions
+     * @return mixed
+     * @throws ApiException
+     */
+    public function getClientCountByConditions(array $conditions)
+    {
+        $ret = $this->request('POST', $this->baseUri . '/query_user_count', ['conditions' => $conditions]);
+        if ($ret['result'] != 'ok') {
+            throw new ApiException($ret['result']);
+        }
+        return $ret['user_count'];
+    }
+
+    /**
+     * 获取bi标签列表
+     * @return mixed
+     * @throws ApiException
+     */
+    public function getBiTags()
+    {
+        $ret = $this->request('GET', $this->baseUri . '/query_bi_tags');
+        if ($ret['result'] != 'ok') {
+            throw new ApiException($ret['result']);
+        }
+        return $ret['tags'];
+    }
+
+    /**
+     * 获取有回执的用户列表
+     * @param array $params
+     * @return mixed
+     * @throws ApiException
+     */
+    public function getFeedbackUsers(array $params)
+    {
+        $ret = $this->request('POST', $this->baseUri . '/get_feedback_users', ['data' => $params]);
+        if ($ret['result'] != 'ok') {
+            throw new ApiException($ret['result']);
+        }
+        return $ret['hasfb'];
     }
 }

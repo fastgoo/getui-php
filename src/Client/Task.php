@@ -12,7 +12,7 @@ use GeTui\ApiException;
 
 class Task extends Entity
 {
-    protected $taskId;
+    public $taskId;
 
     public function __construct(array $config)
     {
@@ -40,6 +40,7 @@ class Task extends Entity
         if (empty($res['cid'])) {
             throw new ApiException('推送对象非列表');
         }
+        $this->reset();
         return $this->api->pushTask($res);
     }
 
@@ -49,11 +50,11 @@ class Task extends Entity
      */
     public function save()
     {
-        $ret = $this->api->saveTask($this->buildRequestData());
-        if (!$ret) {
-            throw new ApiException('个推任务保存失败了。ret: ' . json_encode($ret, JSON_UNESCAPED_UNICODE));
+        $taskId = $this->api->saveTask($this->buildRequestData());
+        if (!$taskId) {
+            throw new ApiException('个推任务保存失败了。');
         }
-        $this->taskId = $ret['taskid'];
+        $this->taskId = $taskId;
         return $this;
     }
 }

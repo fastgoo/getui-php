@@ -9,6 +9,7 @@
 namespace GeTui\Client;
 
 use GeTui\Api;
+use GeTui\ApiException;
 use GeTui\Template\Link;
 use GeTui\Template\Message;
 use GeTui\Template\Notification;
@@ -29,6 +30,7 @@ class Entity
     protected $config;
     protected $alias;
     protected $cid;
+    protected $conditions;
 
     /**
      * PushClient constructor.
@@ -61,9 +63,13 @@ class Entity
      * 设置应用模板消息结构
      * @param callable $call_func
      * @return $this
+     * @throws ApiException
      */
     public function setNotification(callable $call_func)
     {
+        if ($this->message->getMsgtype()) {
+            throw new ApiException('只可设置一种消息类型的模板');
+        }
         $this->message->setMsgtype(($this->message)::MSG_TYPE_NOTIFICATION);
         call_user_func($call_func, $this->notification);
         return $this;
@@ -73,9 +79,13 @@ class Entity
      * 设置网页模板消息结构
      * @param callable $call_func
      * @return $this
+     * @throws ApiException
      */
     public function setLink(callable $call_func)
     {
+        if ($this->message->getMsgtype()) {
+            throw new ApiException('只可设置一种消息类型的模板');
+        }
         $this->message->setMsgtype(($this->message)::MSG_TYPE_LINK);
         call_user_func($call_func, $this->link);
         return $this;
@@ -85,9 +95,13 @@ class Entity
      * 设置下载模板消息结构
      * @param callable $call_func
      * @return $this
+     * @throws ApiException
      */
     public function setNotypopload(callable $call_func)
     {
+        if ($this->message->getMsgtype()) {
+            throw new ApiException('只可设置一种消息类型的模板');
+        }
         $this->message->setMsgtype(($this->message)::MSG_TYPE_NITYPOPLOAD);
         call_user_func($call_func, $this->notypopload);
         return $this;
@@ -97,9 +111,13 @@ class Entity
      * 设置透传模板消息结构
      * @param callable $call_func
      * @return $this
+     * @throws ApiException
      */
     public function setPushInfo(callable $call_func)
     {
+        if ($this->message->getMsgtype() && $this->message->getMsgtype() != 'notification') {
+            throw new ApiException('只可设置一种消息类型的模板');
+        }
         $this->message->setMsgtype(($this->message)::MSG_TYPE_TRANSMISSION);
         call_user_func($call_func, $this->pushInfo);
         return $this;
@@ -150,6 +168,20 @@ class Entity
     }
 
     /**
+     * 设置查询条件
+     * key 筛选条件类型名称(省市region,手机类型phonetype,用户标签tag)
+     * values 筛选参数
+     * opt_type 筛选参数的组合，0:取参数并集or，1：交集and，2：相当与not in {参数1，参数2，....}
+     * @param array $conditions
+     * @return $this
+     */
+    public function setConditions(array $conditions)
+    {
+        $this->conditions = $conditions;
+        return $this;
+    }
+
+    /**
      * 组装推送基础数据数组
      * @return array
      */
@@ -184,17 +216,33 @@ class Entity
     }
 
     /**
+     * 获取请求的参数
+     * 重置所有配置
+     * @return array
+     */
+    public function getRequestData()
+    {
+        $res = $this->buildRequestData();
+        $this->alias && $res['alias'] = $this->alias;
+        $this->cid && $res['cid'] = $this->cid;
+        $this->reset();
+        return $res;
+    }
+
+    /**
      * 重置配置信息
      */
     protected function reset()
     {
         $this->cid = null;
         $this->alias = null;
+        $this->conditions = null;
         $this->message = new Message();
         $this->notification = new Notification();
         $this->notypopload = new Notypopload();
         $this->link = new Link();
         $this->style = new Style();
         $this->pushInfo = new PushInfo();
+        isset($this->taskId) && $this->taskId = null;
     }
 }
