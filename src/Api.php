@@ -406,7 +406,7 @@ class Api
      */
     public function getActiveCountByToday()
     {
-        $ret = $this->request('GET', $this->baseUri . '/get_last_24hours_online_User_statistics');
+        $ret = $this->requestCal('GET', $this->baseUri . '/get_last_24hours_online_User_statistics');
         if ($ret['result'] != 'ok') {
             throw new ApiException($ret['result']);
         }
@@ -422,7 +422,7 @@ class Api
      */
     public function getClientCountByConditions(array $conditions)
     {
-        $ret = $this->request('POST', $this->baseUri . '/query_user_count', ['conditions' => $conditions]);
+        $ret = $this->requestCal('POST', $this->baseUri . '/query_user_count', ['conditions' => $conditions]);
         if ($ret['result'] != 'ok') {
             throw new ApiException($ret['result']);
         }
@@ -437,7 +437,7 @@ class Api
      */
     public function getBiTags()
     {
-        $ret = $this->request('GET', $this->baseUri . '/query_bi_tags');
+        $ret = $this->requestCal('GET', $this->baseUri . '/query_bi_tags');
         if ($ret['result'] != 'ok') {
             throw new ApiException($ret['result']);
         }
@@ -453,7 +453,7 @@ class Api
      */
     public function getFeedbackUsers(array $params)
     {
-        $ret = $this->request('POST', $this->baseUri . '/get_feedback_users', ['data' => $params]);
+        $ret = $this->requestCal('POST', $this->baseUri . '/get_feedback_users', ['data' => $params]);
         if ($ret['result'] != 'ok') {
             throw new ApiException($ret['result']);
         }
