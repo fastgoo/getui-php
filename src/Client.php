@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Created by PhpStorm.
  * User: Mr.Zhou
@@ -14,9 +15,32 @@ use GeTui\Client\Task;
 
 class Client
 {
+    /**
+     * api
+     *
+     * @var Api
+     */
     public $api;
+
+    /**
+     * single
+     *
+     * @var Single
+     */
     public $single;
+
+    /**
+     * batch
+     *
+     * @var Batch
+     */
     public $batch;
+
+    /**
+     * task
+     *
+     * @var Task
+     */
     public $task;
 
     /**

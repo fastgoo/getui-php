@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Created by PhpStorm.
  * User: Mr.Zhou
@@ -18,6 +19,7 @@ namespace GeTui;
 class Api
 {
     use ClientManage;
+    
     private $apiRes;
 
     public function __construct(array $config = [])

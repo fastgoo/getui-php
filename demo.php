@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Created by PhpStorm.
  * User: Mr.Zhou
@@ -14,8 +15,5 @@ try {
         'master_secret' => '',
         'logo_url' => '',
     ]);
-
-
 } catch (\GeTui\ApiException $apiException) {
-
 }
