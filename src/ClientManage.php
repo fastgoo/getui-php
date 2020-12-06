@@ -8,7 +8,7 @@
 
 namespace GeTui;
 
-use Symfony\Component\Cache\Simple\FilesystemCache;
+use Symfony\Component\Cache\Adapter\FilesystemAdapter;
 use GuzzleHttp\Client as HttpClient;
 
 trait ClientManage
@@ -28,7 +28,7 @@ trait ClientManage
 
     /**
      * 文件缓存实例
-     * @var FilesystemCache
+     * @var FilesystemAdapter
      */
     protected $cache;
 
@@ -46,7 +46,7 @@ trait ClientManage
     {
         $this->config = $config;
         $this->baseUri .= $this->config['app_id'];
-        $this->cache = new FilesystemCache();
+        $this->cache = new FilesystemAdapter();
     }
 
     /**
@@ -59,12 +59,13 @@ trait ClientManage
         if ($this->autToken) {
             return $this->autToken;
         }
-        if ($this->cache->has('auth_token.' . $this->config['app_id'])) {
-            $this->autToken = $this->cache->get('auth_token.' . $this->config['app_id']);
+        $auth_token = $this->cache->getItem('auth_token.' . $this->config['app_id']);
+        if ($auth_token->isHit()) {
+            $this->autToken = $auth_token->get();
             return $this->autToken;
         }
         $this->autToken = $this->auth();
-        $this->cache->set('auth_token.' . $this->config['app_id'], $this->autToken, 3600 * 24);
+        $auth_token->set('auth_token.' . $this->config['app_id'], $this->autToken, 3600 * 24);
         return $this->autToken;
     }
 
